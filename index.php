@@ -16,7 +16,7 @@ if(isset($_POST['register'])) {
     if($query){
         echo "<script>
                 alert('Registrasi berhasil');
-                window.location='daftar.php';
+                window.location='index.php';
               </script>";
     } else {
         echo "<script>
@@ -39,8 +39,8 @@ if(isset($_POST['register'])) {
 
 <form method="POST">
 
-    <label>Username</label><br>
-    <input type="text" name="username" required>
+    <label>Nama Lengkap</label><br>
+    <input type="text" name="nama_lengkap" required>
     <br><br>
 
     <label>Email</label><br>
@@ -51,7 +51,7 @@ if(isset($_POST['register'])) {
     <input type="password" name="password" required>
     <br><br>
 
-    <button type="submit" name="daftar">Daftar</button>
+    <button type="submit" name="register">Register</button>
 
 </form>
 
